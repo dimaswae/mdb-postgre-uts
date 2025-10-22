@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  postgres_dimas:
+    image: postgres:15
+    container_name: postgres_dimas
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "22073:5432" 
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  pgadmin_dimas:
+    image: dpage/pgadmin4
+    container_name: pgadmin_dimas
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "44073:80" 
+    depends_on:
+      - postgres_dimas
+
+volumes:
+  postgres_data:
