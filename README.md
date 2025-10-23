@@ -1,6 +1,6 @@
-# 🐘 PostgreSQL & pgAdmin Docker Setup — UTS Pengembangan Aplikasi Web
+## 🐘 PostgreSQL & pgAdmin Docker Setup — Manajemen Database
 
-Proyek ini merupakan tugas **UTS** mata kuliah **Pengembangan Aplikasi Web**.  
+Proyek ini merupakan tugas **UTS** mata kuliah **Manajemen Database**.  
 Tujuannya adalah untuk menjalankan **PostgreSQL** dan **pgAdmin4** menggunakan **teknik kontainerisasi (Docker)**, dengan pengaturan environment yang disembunyikan dalam file `.env`.
 
 ---
@@ -31,9 +31,9 @@ Tujuannya adalah untuk menjalankan **PostgreSQL** dan **pgAdmin4** menggunakan *
 1. Pastikan Docker sudah terinstal di komputer kamu.
 2. Clone repository ini:
    ```bash
-   git clone https://github.com/dimaswae/mhs-data-manager.git
+   git clone https://github.com/dimaswae/mdb-postgre-uts.git
 
-   cd mhs-data-manager
+   cd mdb-postgre-uts
    ```
 3. Jalankan container
     ```bash
@@ -86,7 +86,7 @@ Contrainst yang di uji :
 ## 📄 Laporan UTS
 
 Kamu bisa mengunduh laporan lengkap dalam format PDF di sini:  
-📥 [Download Laporan UTS (PDF)](./Laporan_UTS_DimasRizqiaHidayat.pdf)
+📥 [Download Laporan UTS (PDF)](docs/UTS-Dokumentasi_postgreSQL-1237050073-Dimas_Rizqia_Hidayat-5A.pdf)
 
 ---
 
