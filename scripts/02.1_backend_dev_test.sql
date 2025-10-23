@@ -18,4 +18,4 @@ UPDATE SALAM.mahasiswas SET ipk=3.6 WHERE nim='1237050200';
 CREATE TABLE SALAM.test_backend(id INT);
 
 -- Kembali ke superuser
-RESET ROLE;
+SET ROLE postgres;

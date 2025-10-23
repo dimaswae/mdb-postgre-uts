@@ -1,9 +1,9 @@
 version: '3.8'
 
 services:
-  postgres_dimas:
+  postgres_dimasrizqiahidayat:
     image: postgres:15
-    container_name: postgres_dimas
+    container_name: postgres_dimasrizqiahidayat
     restart: always
     env_file:
       - .env
@@ -11,17 +11,29 @@ services:
       - "22073:5432" 
     volumes:
       - postgres_data:/var/lib/postgresql/data
+       - ./scripts:/docker-entrypoint-initdb.d  
+    networks:
+      - exam-network
 
-  pgadmin_dimas:
+  pgadmin_dimasrizqiahidayat:
     image: dpage/pgadmin4
-    container_name: pgadmin_dimas
+    container_name: pgadmin_dimasrizqiahidayat
     restart: always
     env_file:
       - .env
     ports:
       - "44073:80" 
     depends_on:
-      - postgres_dimas
+      - postgres_dimasrizqiahidayat
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    networks:
+      - exam-network
 
 volumes:
   postgres_data:
+  pgadmin_data:
+
+networks:
+  exam-network:
+    driver: bridge
