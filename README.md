@@ -94,6 +94,6 @@ Kamu bisa mengunduh laporan lengkap dalam format PDF di sini:
 
 **Dimas Rizqia Hidayat**  
 Informatika — UIN Sunan Gunung Djati Bandung  
-📚 Semester 5 — 2025 
-📚 NIM : 1237050073 
-🐙 GitHub: [@dimaswae](https://github.com/dimaswae)
+- 📚 Semester 5 — 2025 
+- 📚 NIM : 1237050073 
+- 🐙 GitHub: [@dimaswae](https://github.com/dimaswae)
