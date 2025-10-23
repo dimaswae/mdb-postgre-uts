@@ -19,4 +19,4 @@ DELETE FROM SALAM.test_dataeng WHERE id=1;
 DROP TABLE SALAM.test_dataeng;
 
 -- kembali ke superuser
-RESET ROLE;
+SET ROLE postgres;

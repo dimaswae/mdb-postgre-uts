@@ -8,10 +8,9 @@ services:
     env_file:
       - .env
     ports:
-      - "22073:5432" 
+      - "22073:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-       - ./scripts:/docker-entrypoint-initdb.d  
     networks:
       - exam-network
 
@@ -22,7 +21,7 @@ services:
     env_file:
       - .env
     ports:
-      - "44073:80" 
+      - "44073:80"
     depends_on:
       - postgres_dimasrizqiahidayat
     volumes:

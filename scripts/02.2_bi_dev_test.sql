@@ -9,4 +9,4 @@ INSERT INTO SALAM.mahasiswas(nim,nama,prodi,fakultas,semester,angkatan,email,usi
 VALUES('1237050201','Test BI','Informatika','Sains dan Teknologi',3,2025,'testbi@mail.com',20,'P',3.7,'Aktif');
 
 -- kembali ke superuser
-RESET ROLE;
+SET ROLE postgres;

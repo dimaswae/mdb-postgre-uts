@@ -8,7 +8,7 @@ CREATE USER data_engineer WITH PASSWORD 'dataeng123';
 -- Berikan akses umum ke skema
 GRANT USAGE ON SCHEMA SALAM TO backend_dev, bi_dev, data_engineer;
 
--- backend_dev account
+-- backend_dev access account
 -- CRUD Access : dapat membaca dan memodifikasi data di semua tabel
 GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA SALAM TO backend_dev;
 
